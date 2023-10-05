@@ -689,6 +689,13 @@ runtimes.runtimeMap.forEach((runtime, databaseName) => {
     }
   );
 
+  it(`run simple sql - ${databaseName}`, async () => {
+    const result = await runtime
+      .loadQuery(`run: conn.sql("select 1 as one")`)
+      .run();
+    expect(result.data.value[0]['one']).toBe(1);
+  });
+
   it(`all with parameters - basic  - ${databaseName}`, async () => {
     const result = await runtime
       .loadQuery(
