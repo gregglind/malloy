@@ -43,7 +43,7 @@
     "@malloydata/duckdb-wasm": "0.0.3",
     "@malloydata/malloy": "^0.0.94",
     "apache-arrow": "^13.0.0",
-    "duckdb": "0.9.1-dev19.0",
+    "duckdb": "0.9.1-dev95.0",
     "web-worker": "^1.2.0"
   }
 }
